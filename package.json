@@ -17,9 +17,9 @@
     "babel-preset-react": "*"
   },
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack -w",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build": "webpack",
+    "watch": "webpack -w"
   }
 }
