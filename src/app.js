@@ -5,8 +5,7 @@ import Home from "./pages/home";
 
 export function App() {
   return (
-    // <Router basename={process.env.PUBLIC_URL}>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/browse">
           <p>I will be the sign in page</p>
