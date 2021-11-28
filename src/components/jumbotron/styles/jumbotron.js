@@ -33,7 +33,13 @@ export const Item = styled.div`
 `;
 
 export const Container = styled.section`
-  background-color: blue;
+  background-color: black;
+
+  @media (max-width: 1000px) {
+    ${Item}: last-of-type h2 {
+      margin-bottom: 50px;
+    }
+  }
 `;
 
 export const Title = styled.h1`

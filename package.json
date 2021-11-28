@@ -1,5 +1,6 @@
 {
   "name": "project",
+  "homepage": "https://ganesh-gopalakrishnan.github.io/NetflixClone_1",
   "dependencies": {
     "react": "16.13.1",
     "react-dom": "16.13.1",

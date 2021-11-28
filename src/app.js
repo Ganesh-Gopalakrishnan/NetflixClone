@@ -5,6 +5,7 @@ import Home from "./pages/home";
 
 export function App() {
   return (
+    // <Router basename={process.env.PUBLIC_URL}>
     <Router>
       <Switch>
         <Route path="/browse">
