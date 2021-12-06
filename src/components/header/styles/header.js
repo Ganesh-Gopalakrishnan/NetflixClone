@@ -7,8 +7,9 @@ export const Background = styled.section`
   height: 100%;
   background: url(${({ src }) =>
       src
-        ? `../images/misc/${src}.jpg`
-        : "https://raw.githubusercontent.com/Ganesh-Gopalakrishnan/NetflixClone_1/main/images/misc/home-bg.jpg"})
+        ? // ? `../images/misc/${src}.jpg`
+          `#`
+        : "https://d28mq30amg5oyw.cloudfront.net/lizy%2Fpreview%2F43622733%2Fmain_full.jpg?response-content-disposition=inline%3Bfilename%3D%22main_full.jpg%22%3B&response-content-type=image%2Fjpeg&Expires=1638735135&Signature=c9aSWGi1AnbLIgQ9VIJ6JjJlQlaafBJ21dTTTtXeex1clMrpX06TSZuJN0Qo~6z97z3dQLKWvzPrvcX1Kwhv5jhFKHkNN3b~8S4g3JpXnwBDXqOxyHVmob7np3I5eQDrikziMqkwXkLw63~s5s3hCIz31LILTAWFSmkOhUL8haOZZJCHjDQm7kENxhdQ-W5Zic18ZKLZJcmrAEKleKIbdYzWbHkrLxXtIVSu2~KBlM-uUZX9oZE5UcnSRuUN-gWcOoRPkNbSVfUwULHmmDIqXOnBpvpkLPJIFFu7RdwhJEtCtwmb~mlQ5Ox6Jk1he2oZqEih00DhaJ71R3mEsyOtQQ__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ"})
     top left / cover no-repeat;
 
   @media (max-width: 1100px) {

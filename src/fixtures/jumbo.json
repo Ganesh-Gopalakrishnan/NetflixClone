@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Enjoy on your TV.",
     "subTitle": "Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.",
-    "image": "https://raw.githubusercontent.com/Ganesh-Gopalakrishnan/NetflixClone_1/main/images/misc/home-tv.jpg",
+    "image": "https://d28mq30amg5oyw.cloudfront.net/mizy%2Fpreview%2F43622734%2Fmain_large.jpg?response-content-disposition=inline%3Bfilename%3D%22main_large.jpg%22%3B&response-content-type=image%2Fjpeg&Expires=1638735125&Signature=IS7uODMOAgbYbp7PM8Ok8FtiK~sY58DrxL8jhnShNhx2o7wq74KaSAv9lWpKloAWxBo9XgezYLGlqW1lYKBFyPPvzc0oRagz9O701T8NtHMzCh1Y5lNyqrJUMsLfxFeDb~Eb~a-SAqbfzUsIUjSGmIfSA9Q7EYNM1m~sn6czH8BJcR8rT9g8gmDV7eFi1T4ffbe4vo1bHmljO2MhsXJBTYAIfpFtoPe37AtXZhBZlRCeZ68K3VIfubC5~33NyAUXtL-Y2wTIyzcnG9Ac19NjhSk8kMGKS1P434gm3~ycy-AXTgZmPDrzylDeKGhgXYDHHj6i2dEV941LuMz1wY4g~g__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ",
     "alt": "Tiger King on Netflix",
     "direction": "row"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "title": "Download your programmes to watch on the go.",
     "subTitle": "Save your data and watch all your favourites offline.",
-    "image": "https://raw.githubusercontent.com/Ganesh-Gopalakrishnan/NetflixClone_1/main/images/misc/home-mobile.jpg",
+    "image": "https://d28mq30amg5oyw.cloudfront.net/nizy%2Fpreview%2F43622735%2Fmain_large.jpg?response-content-disposition=inline%3Bfilename%3D%22main_large.jpg%22%3B&response-content-type=image%2Fjpeg&Expires=1638735125&Signature=ELG4rGTusgIFU6xIp8bbpFmv92TZ7VeqyFYkni9Xk6uchzf4Et3tHVYGSMps3fBzI2HCQfOT9ywteWMghUWJFb8CkKRQbmkYOJ6icVysc-jkqC3njj-5dioOi0yDv7GWiF8waK0wqnQ8OwWzhGxtQ5vOq86-13~E8sOZQDBTZyDMA4Upcg4R~5bdrwfCEzw558ClSzaJhp~UTziDbzNseytMg-E1vXRo27bHXxY5QX5Y0p30BOL4K6KjJislw~WcIXcLIVYEVgcf4r64GyQ1w96NvFkihRZT-4vf3FTRC~dx~OBdzo-JzOJ4QqCgNUy1lNDDOUJXFPXX3~aUp7sOvg__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ",
     "alt": "Tiger King on Netflix",
     "direction": "row-reverse"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "title": "Watch everywhere.",
     "subTitle": "Stream unlimited films and TV programmes on your phone, tablet, laptop and TV without paying more.",
-    "image": "https://raw.githubusercontent.com/Ganesh-Gopalakrishnan/NetflixClone_1/main/images/misc/home-imac.jpg",
+    "image": "https://d28mq30amg5oyw.cloudfront.net/kizy%2Fpreview%2F43622732%2Fmain_large.jpg?response-content-disposition=inline%3Bfilename%3D%22main_large.jpg%22%3B&response-content-type=image%2Fjpeg&Expires=1638735125&Signature=AFJm~GYtztS1vDlNynBNTqR4wB6rcl35TeeQ6mZsap3wUrwG-5k45JlwntEjNhQDIlv-xqqXPpnhLDOXzcpixYa7yxquRJwEexMnBR4pb24rGUKEYHDJt5y-epLSpnsRjaJcmgB3ppIdQFHFKwgWuJ282R9jQqcK1rrkE8Rgcoi-zzzlpZktGJb5AXb9XAum7SHOBzqBCiGpz5IZEBYTcU0k-WJwxty~gdLi5exgr2abrrYB3G54pQ4IgVmiawKZHj41Wf1fZyXb-tmJyDwv4i87Tqdf-h~6JB1sVMbUEvpXLLuGJ-NDLpOZ4oEKm234mYMlRLQa5in2woKfPK-nMA__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ",
     "alt": "Money Heist on Netflix",
     "direction": "row"
   }

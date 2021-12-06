@@ -8,6 +8,7 @@ import {
   Item,
   Frame
 } from "./styles/accordion";
+import { open, close } from "../../fixtures/imglinks.js";
 
 const ToggleContext = createContext();
 
@@ -45,13 +46,13 @@ Accordion.Header = function AccordionHeader({ children, ...restProps }) {
       {children}
       {toggleShow ? (
         <img
-          src="https://raw.githubusercontent.com/Ganesh-Gopalakrishnan/NetflixClone_1/main/images/icons/close-slim.png"
+          src={open}
           // src="/images/icons/close-slim.png"
           alt="Close"
         />
       ) : (
         <img
-          src="https://raw.githubusercontent.com/Ganesh-Gopalakrishnan/NetflixClone_1/main/images/icons/add.png"
+          src={close}
           // src="/images/icons/add.png"
           alt="Open"
         />
