@@ -8,7 +8,6 @@ import {
   Item,
   Frame
 } from "./styles/accordion";
-import { open, close } from "../../fixtures/imglinks.js";
 
 const ToggleContext = createContext();
 
@@ -46,13 +45,13 @@ Accordion.Header = function AccordionHeader({ children, ...restProps }) {
       {children}
       {toggleShow ? (
         <img
-          src={open}
+          src="https://cdn-icons.flaticon.com/png/512/2997/premium/2997911.png?token=exp=1638792709~hmac=9ca9dbc7acbdb06d280fd9ae5c40691a"
           // src="/images/icons/close-slim.png"
           alt="Close"
         />
       ) : (
         <img
-          src={close}
+          src="https://cdn-icons.flaticon.com/png/512/2997/premium/2997933.png?token=exp=1638792601~hmac=34296e855cca40abc1927a231a312898"
           // src="/images/icons/add.png"
           alt="Open"
         />
