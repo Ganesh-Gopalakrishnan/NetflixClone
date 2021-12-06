@@ -20,24 +20,20 @@ export const Input = styled.input`
   padding: 10px;
   height: 70px;
   box-sizing: border-box;
-
-  @media (max-width: 600px) {
-    height: 40px;
-  }
 `;
 
 export const Button = styled.button`
-  background: #e50914;
   display: flex;
   align-items: center;
   height: 70px;
+  background: #e50914;
   color: white;
   text-transform: uppercase;
   padding: 0 32px;
   font-size: 26px;
   border: 0;
   cursor: pointer;
-  margin-bottom: 40px;
+  /* width: 280px; */
 
   img {
     margin-left: 10px;
@@ -61,12 +57,15 @@ export const Button = styled.button`
   }
 `;
 
+export const Break = styled.div`
+  flex-basis: 100%;
+  height: 0;
+`;
+
 export const Text = styled.p`
-  color: white;
-  font-weight: 500;
-  text-align: center;
   font-size: 19px;
-  width: 100%;
+  color: white;
+  text-align: center;
 
   @media (max-width: 600px) {
     font-size: 16px;

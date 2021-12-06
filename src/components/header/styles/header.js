@@ -4,12 +4,12 @@ import { Link as ReachRouterLink } from "react-router-dom";
 export const Background = styled.section`
   display: flex;
   flex-direction: column;
-  height: 100%;
+  border-bottom: 8px solid #222;
+  padding: 0 0 120px 0;
   background: url(${({ src }) =>
       src
-        ? // ? `../images/misc/${src}.jpg`
-          `#`
-        : "https://dc593.4shared.com/img/DCAJ8qfBiq/s24/17d8fb4f970/home-bg?async&rand=0.7508729288274507"})
+        ? `../images/misc/${src}.jpg`
+        : "https://dc593.4shared.com/img/DCAJ8qfBiq/s24/17d8fb4f970/home-bg?async&rand=0.6978497311868077"})
     top left / cover no-repeat;
 
   @media (max-width: 1100px) {
@@ -39,21 +39,19 @@ export const Link = styled.p`
   color: #fff;
   text-decoration: none;
   margin-right: 30px;
-  font-weight: ${(active) => (active === "true" ? "700" : "normal")};
-  /* font-weight: ${({ active }) => (active === "true" ? "700" : "normal")}; */
+  font-weight: ${({ active }) => (active === "true" ? "700" : "normal")};
   cursor: pointer;
 
   &:hover {
     font-weight: bold;
   }
-
   &:last-of-type {
     margin-right: 0;
   }
 `;
 
 export const ButtonLink = styled(ReachRouterLink)`
-  display: flex;
+  display: block;
   background-color: #e50914;
   width: 84px;
   height: fit-content;

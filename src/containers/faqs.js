@@ -1,6 +1,5 @@
 import React from "react";
 import { Accordion, OptForm } from "../components";
-// import OptForm from "../components/opt-form";
 import faqsData from "../fixtures/faqs.json";
 
 export function FaqsContainer() {
@@ -22,6 +21,7 @@ export function FaqsContainer() {
         </OptForm.Text>
         <OptForm.Input placeholder="Email Address" />
         <OptForm.Button>Get Started</OptForm.Button>
+        <OptForm.Break />
       </OptForm>
     </Accordion>
   );

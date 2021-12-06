@@ -9,30 +9,30 @@ import {
   Break
 } from "./styles/footer";
 
-export default function Footer({ children, ...restprops }) {
-  return <Container {...restprops}>{children}</Container>;
+export default function Footer({ children, ...restProps }) {
+  return <Container {...restProps}>{children}</Container>;
 }
 
-Footer.Row = function FooterRow({ children, ...restprops }) {
-  return <Row {...restprops}>{children}</Row>;
+Footer.Row = function FooterRow({ children, ...restProps }) {
+  return <Row {...restProps}>{children}</Row>;
 };
 
-Footer.Column = function FooterColumn({ children, ...restprops }) {
-  return <Column {...restprops}>{children}</Column>;
+Footer.Column = function FooterColumn({ children, ...restProps }) {
+  return <Column {...restProps}>{children}</Column>;
 };
 
-Footer.Link = function FooterLink({ children, ...restprops }) {
-  return <Link {...restprops}>{children}</Link>;
+Footer.Link = function FooterLink({ children, ...restProps }) {
+  return <Link {...restProps}>{children}</Link>;
 };
 
-Footer.Title = function FooterTitle({ children, ...restprops }) {
-  return <Title {...restprops}>{children}</Title>;
+Footer.Title = function FooterTitle({ children, ...restProps }) {
+  return <Title {...restProps}>{children}</Title>;
 };
 
-Footer.Text = function FooterText({ children, ...restprops }) {
-  return <Text {...restprops}>{children}</Text>;
+Footer.Text = function FooterText({ children, ...restProps }) {
+  return <Text {...restProps}>{children}</Text>;
 };
 
-Footer.Break = function FooterBreak({ ...restprops }) {
-  return <Break {...restprops} />;
+Footer.Break = function FooterBreak({ ...restProps }) {
+  return <Break {...restProps} />;
 };

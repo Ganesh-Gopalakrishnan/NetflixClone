@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   max-width: 1000px;
   flex-direction: column;
-  padding: 70px 50px;
+  padding: 70px 56px;
   margin: auto;
 
   @media (max-width: 1000px) {
@@ -29,15 +29,14 @@ export const Row = styled.div`
 `;
 
 export const Link = styled.a`
-  font-size: 13px;
   color: #757575;
   margin-bottom: 20px;
+  font-size: 13px;
   text-decoration: none;
 `;
 
 export const Title = styled.p`
   font-size: 16px;
-  font-weight: 600;
   color: #757575;
   margin-bottom: 40px;
 `;

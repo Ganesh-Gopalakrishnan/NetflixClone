@@ -1,26 +1,30 @@
 import React from "react";
-import { Container, Input, Button, Text } from "./styles/opt-form";
+import { Container, Input, Break, Button, Text } from "./styles/opt-form";
 
-export default function OptForm({ children, ...restprops }) {
-  return <Container {...restprops}>{children}</Container>;
+export default function OptForm({ children, ...restProps }) {
+  return <Container {...restProps}>{children}</Container>;
 }
 
-OptForm.Input = function OptFormInput({ ...restprops }) {
-  return <Input {...restprops} />;
+OptForm.Input = function OptFormInput({ ...restProps }) {
+  return <Input {...restProps} />;
 };
 
-OptForm.Button = function OptFormButton({ children, ...restprops }) {
+OptForm.Button = function OptFormButton({ children, ...restProps }) {
   return (
-    <Button {...restprops}>
+    <Button {...restProps}>
       {children}{" "}
       <img
-        src="https://cdn-icons-png.flaticon.com/512/32/32213.png"
+        src="https://dc705.4shared.com/img/suPZdu5miq/s24/17d8fbab630/chevron-right?async&rand=0.6069299285076668"
         alt="Try Now"
       />
     </Button>
   );
 };
 
-OptForm.Text = function OptFormText({ children, ...restprops }) {
-  return <Text {...restprops}>{children}</Text>;
+OptForm.Break = function OptBreak({ ...restProps }) {
+  return <Break {...restProps} />;
+};
+
+OptForm.Text = function OptFormText({ children, ...restProps }) {
+  return <Text {...restProps}>{children}</Text>;
 };
