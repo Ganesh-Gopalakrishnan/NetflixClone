@@ -3,12 +3,16 @@ import { FaqsContainer } from "../containers/faqs";
 import { JumbotronContainer } from "../containers/jumbotron";
 import { FooterContainer } from "../containers/footer";
 import { HeaderContainer } from "../containers/header";
-import { OptForm } from "../components";
+import { Feature, OptForm } from "../components";
 
 export default function Home() {
   return (
     <>
       <HeaderContainer>
+        <Feature>
+          <Feature.Title>Unlimited movies, TV shows and more.</Feature.Title>
+          <Feature.Subtitle>Watch anywhere. Cancel anytime.</Feature.Subtitle>
+        </Feature>
         <OptForm>
           <OptForm.Text>
             Ready to watch? Enter your email to create or restart your
