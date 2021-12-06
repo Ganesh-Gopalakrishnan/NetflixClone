@@ -45,13 +45,13 @@ Accordion.Header = function AccordionHeader({ children, ...restProps }) {
       {children}
       {toggleShow ? (
         <img
-          src="https://cdn-icons.flaticon.com/png/512/2997/premium/2997911.png?token=exp=1638792709~hmac=9ca9dbc7acbdb06d280fd9ae5c40691a"
+          src="https://dc572.4shared.com/img/7P2cylncea/s24/17d8fbabe00/close-slim?async&rand=0.5854346231548808"
           // src="/images/icons/close-slim.png"
           alt="Close"
         />
       ) : (
         <img
-          src="https://cdn-icons.flaticon.com/png/512/2997/premium/2997933.png?token=exp=1638792601~hmac=34296e855cca40abc1927a231a312898"
+          src="https://dc572.4shared.com/img/Ur2vs7Haea/s24/17d8fbab248/add?async&rand=0.37898267811575526"
           // src="/images/icons/add.png"
           alt="Open"
         />
