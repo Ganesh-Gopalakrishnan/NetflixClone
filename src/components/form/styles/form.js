@@ -13,6 +13,10 @@ export const Container = styled.section`
   max-width: 450px;
   padding: 60px 68px 40px;
   margin-bottom: 100px;
+
+  @media (max-width: 600px) {
+    width: 90%;
+  }
 `;
 
 export const Error = styled.div`
@@ -48,7 +52,12 @@ export const TextSmall = styled.h2`
   margin-top: 10px;
   font-size: 12px;
   line-height: normal;
+  font-weight: 500;
   color: #8c8c8c;
+
+  a {
+    color: #0071eb;
+  }
 `;
 
 export const Link = styled(ReachRouterLink)`
