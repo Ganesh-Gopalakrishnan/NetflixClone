@@ -20,6 +20,10 @@ export const Input = styled.input`
   padding: 10px;
   height: 70px;
   box-sizing: border-box;
+
+  @media (max-width: 1000px) {
+    max-width: 340px;
+  }
 `;
 
 export const Button = styled.button`
@@ -33,7 +37,6 @@ export const Button = styled.button`
   font-size: 26px;
   border: 0;
   cursor: pointer;
-  /* width: 280px; */
 
   img {
     margin-left: 10px;
@@ -70,5 +73,6 @@ export const Text = styled.p`
   @media (max-width: 600px) {
     font-size: 16px;
     line-height: 22px;
+    max-width: 380px;
   }
 `;
