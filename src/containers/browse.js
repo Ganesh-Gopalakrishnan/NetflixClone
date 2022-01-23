@@ -10,8 +10,7 @@ export function BrowseContainer() {
 
   const user = {
     displayName: "Karl",
-    photoURL:
-      "https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+    photoURL: "Netflix-avatar"
   };
 
   return profile.displayName ? (
@@ -20,6 +19,6 @@ export function BrowseContainer() {
       <FooterContainer />
     </>
   ) : (
-    <SelectProfileContainer user={user} setProfile={setProfile} />
+    <SelectProfileContainer user={user} setProfi />
   );
 }
