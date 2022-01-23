@@ -1,20 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { useHistory } from "react-router-dom";
+import { FirebaseContext } from "../context/firebase";
 import { Form } from "../components";
-import { FooterContainer } from "../containers/footer";
 import { HeaderContainer } from "../containers/header";
+import { FooterContainer } from "../containers/footer";
+import * as ROUTES from "../constants/routes";
 
 export default function Signin() {
-  const [error, setError] = useState("");
+  const history = useHistory();
+  const { firebase } = useContext(FirebaseContext);
+
   const [emailAddress, setEmailAddress] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
-  const IsvalidInput = (emailAddress === "") | (password === "");
+  const isInvalid = (password === "") | (emailAddress === "");
 
-  const handleSignin = (e) => {
-    e.preventDefault();
+  const handleSignin = (event) => {
+    event.preventDefault();
 
-    // call in here to firebase to authenticate the user
-    // if there's an error, populate the error state
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(emailAddress, password)
+      .then(() => {
+        setEmailAddress("");
+        setPassword("");
+        setError("");
+        history.push(ROUTES.BROWSE);
+      })
+      .catch((error) => setError(error.message));
   };
 
   return (
@@ -37,7 +51,7 @@ export default function Signin() {
               placeholder="Password"
               onChange={({ target }) => setPassword(target.value)}
             />
-            <Form.Submit disabled={IsvalidInput} type="submit">
+            <Form.Submit disabled={isInvalid} type="submit">
               Sign In
             </Form.Submit>
 
@@ -45,8 +59,7 @@ export default function Signin() {
               New to Netflix? <Form.Link to="/signup">Sign up now.</Form.Link>
             </Form.Text>
             <Form.TextSmall>
-              This page is protected by Google reCAPTCHA to ensure you're not a
-              bot. <a href="#">Learn more.</a>
+              This page is protected by Google reCAPTCHA.
             </Form.TextSmall>
           </Form.Base>
         </Form>
