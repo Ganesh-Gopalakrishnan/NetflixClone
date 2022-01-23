@@ -1,52 +1,54 @@
 import React, { useState } from "react";
-import { Form } from "../components";
-import { FooterContainer } from "../containers/footer";
 import { HeaderContainer } from "../containers/header";
+import { Form } from "../components";
+import * as ROUTES from "../constants/routes";
+import { FooterContainer } from "../containers/footer";
 
-export default function Signin() {
-  const [error, setError] = useState("");
+export default function Signup() {
+  const [firstName, setFirstName] = useState("");
   const [emailAddress, setEmailAddress] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
-  const IsvalidInput = (emailAddress === "") | (password === "");
+  const isInvalid = firstName === "" || password === "" || emailAddress === "";
 
-  const handleSignin = (e) => {
-    e.preventDefault();
-
-    // call in here to firebase to authenticate the user
-    // if there's an error, populate the error state
+  const handleSignup = (event) => {
+    event.preventDefault();
   };
 
   return (
     <>
       <HeaderContainer>
         <Form>
-          <Form.Title>Sign In</Form.Title>
+          <Form.Title>Sign Up</Form.Title>
           {error && <Form.Error>{error}</Form.Error>}
 
-          <Form.Base onSubmit={handleSignin} method="POST">
+          <Form.Base onSubmit={handleSignup} method="POST">
             <Form.Input
-              placeholder="Email address"
-              value={emailAddress}
-              onChange={({ target }) => setEmailAddress(target.value)}
+              placeholder="First Name"
+              Value={firstName}
+              onChange={({ target }) => setFirstName(target.Value)}
             />
             <Form.Input
-              type="password"
-              value={password}
-              autoComplete="off"
+              placeholder="Email Address"
+              Value={emailAddress}
+              onChange={({ target }) => setEmailAddress(target.Value)}
+            />
+            <Form.Input
               placeholder="Password"
-              onChange={({ target }) => setPassword(target.value)}
+              type="password"
+              autoComplete="off"
+              Value={password}
+              onChange={({ target }) => setPassword(target.Value)}
             />
-            <Form.Submit disabled={IsvalidInput} type="submit">
-              Sign In
+            <Form.Submit disabled={isInvalid} type="submit">
+              Sign Up
             </Form.Submit>
-
             <Form.Text>
-              New to Netflix? <Form.Link to="/signup">Sign up now.</Form.Link>
+              Already a user? <Form.Link to="/signin">Sign In now.</Form.Link>
             </Form.Text>
             <Form.TextSmall>
-              This page is protected by Google reCAPTCHA to ensure you're not a
-              bot. <a href="#">Learn more.</a>
+              This page is protected by Google reCAPTCHA.
             </Form.TextSmall>
           </Form.Base>
         </Form>
